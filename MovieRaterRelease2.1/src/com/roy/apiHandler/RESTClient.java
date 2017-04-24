@@ -11,17 +11,24 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 public class RESTClient {
 
 	private String url = "http://www.omdbapi.com/?t=";
 	private String jsonString = "";
 
+	Logger log = Logger.getLogger(this.getClass());
+
 	public RESTClient(String data) {
+		PropertyConfigurator.configure("log4j.properties");
 		try {
-			url = url + URLEncoder.encode(data, "UTF-8");
+			url = url + URLEncoder.encode(data, "UTF-8") + "&r=json";
+			log.info("Received URL : " + url);
 		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
+			log.error("UnsupportedEncodingException : " + e.getMessage());
 		}
 	}
 
@@ -34,18 +41,19 @@ public class RESTClient {
 			HttpResponse response = httpClient.execute(getRequest);
 
 			if (response.getStatusLine().getStatusCode() != 200) {
+				log.debug(response.getStatusLine().getStatusCode());
 				throw new RuntimeException("Failed : HTTP error code : " + response.getStatusLine().getStatusCode());
+			} else {
+				log.debug(response.getStatusLine().getStatusCode());
 			}
 
 			BufferedReader br = new BufferedReader(new InputStreamReader((response.getEntity().getContent())));
-
 			String brCache = "";
-			
 
 			while ((brCache = br.readLine()) != null) {
 				jsonString += brCache;
 			}
-			System.out.println(jsonString);
+
 			httpClient.close();
 
 		} catch (ClientProtocolException e) {
@@ -54,6 +62,7 @@ public class RESTClient {
 			e.printStackTrace();
 		}
 
+		log.info("JSON Ready : " + jsonString);
 		return jsonString;
 	}
 

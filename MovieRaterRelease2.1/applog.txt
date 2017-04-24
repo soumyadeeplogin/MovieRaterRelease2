@@ -1,0 +1,74 @@
+INFO    2017-04-24 15:05:55,548 [main] com.roy.apiHandler.RESTClient  - Received URL : http://www.omdbapi.com/?t=Harry+Potter&r=json
+DEBUG   2017-04-24 15:05:55,992 [main] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+DEBUG   2017-04-24 15:05:56,003 [main] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+DEBUG   2017-04-24 15:05:56,004 [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {}->http://www.omdbapi.com:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+DEBUG   2017-04-24 15:05:56,017 [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {}->http://www.omdbapi.com:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+DEBUG   2017-04-24 15:05:56,018 [main] org.apache.http.impl.execchain.MainClientExec  - Opening connection {}->http://www.omdbapi.com:80
+DEBUG   2017-04-24 15:05:56,175 [main] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connecting to www.omdbapi.com/104.27.50.115:80
+DEBUG   2017-04-24 15:05:56,326 [main] org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connection established 10.96.11.178:59529<->104.27.50.115:80
+DEBUG   2017-04-24 15:05:56,326 [main] org.apache.http.impl.execchain.MainClientExec  - Executing request GET /?t=Harry+Potter&r=json HTTP/1.1
+DEBUG   2017-04-24 15:05:56,326 [main] org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+DEBUG   2017-04-24 15:05:56,327 [main] org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+DEBUG   2017-04-24 15:05:56,329 [main] org.apache.http.headers  - http-outgoing-0 >> GET /?t=Harry+Potter&r=json HTTP/1.1
+DEBUG   2017-04-24 15:05:56,329 [main] org.apache.http.headers  - http-outgoing-0 >> accept: application/json
+DEBUG   2017-04-24 15:05:56,329 [main] org.apache.http.headers  - http-outgoing-0 >> Host: www.omdbapi.com
+DEBUG   2017-04-24 15:05:56,329 [main] org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG   2017-04-24 15:05:56,329 [main] org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)
+DEBUG   2017-04-24 15:05:56,329 [main] org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+DEBUG   2017-04-24 15:05:56,329 [main] org.apache.http.wire  - http-outgoing-0 >> "GET /?t=Harry+Potter&r=json HTTP/1.1[\r][\n]"
+DEBUG   2017-04-24 15:05:56,329 [main] org.apache.http.wire  - http-outgoing-0 >> "accept: application/json[\r][\n]"
+DEBUG   2017-04-24 15:05:56,329 [main] org.apache.http.wire  - http-outgoing-0 >> "Host: www.omdbapi.com[\r][\n]"
+DEBUG   2017-04-24 15:05:56,329 [main] org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG   2017-04-24 15:05:56,329 [main] org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_121)[\r][\n]"
+DEBUG   2017-04-24 15:05:56,329 [main] org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG   2017-04-24 15:05:56,329 [main] org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+DEBUG   2017-04-24 15:05:56,485 [main] org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG   2017-04-24 15:05:56,485 [main] org.apache.http.wire  - http-outgoing-0 << "Date: Mon, 24 Apr 2017 09:35:56 GMT[\r][\n]"
+DEBUG   2017-04-24 15:05:56,485 [main] org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG   2017-04-24 15:05:56,485 [main] org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+DEBUG   2017-04-24 15:05:56,486 [main] org.apache.http.wire  - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+DEBUG   2017-04-24 15:05:56,486 [main] org.apache.http.wire  - http-outgoing-0 << "Set-Cookie: __cfduid=defc4a00643268a3f6754f2f4387d55801493026556; expires=Tue, 24-Apr-18 09:35:56 GMT; path=/; domain=.omdbapi.com; HttpOnly[\r][\n]"
+DEBUG   2017-04-24 15:05:56,486 [main] org.apache.http.wire  - http-outgoing-0 << "Cache-Control: public, max-age=86400[\r][\n]"
+DEBUG   2017-04-24 15:05:56,486 [main] org.apache.http.wire  - http-outgoing-0 << "Expires: Tue, 25 Apr 2017 09:35:56 GMT[\r][\n]"
+DEBUG   2017-04-24 15:05:56,486 [main] org.apache.http.wire  - http-outgoing-0 << "Last-Modified: Mon, 24 Apr 2017 09:13:11 GMT[\r][\n]"
+DEBUG   2017-04-24 15:05:56,486 [main] org.apache.http.wire  - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+DEBUG   2017-04-24 15:05:56,486 [main] org.apache.http.wire  - http-outgoing-0 << "X-AspNet-Version: 4.0.30319[\r][\n]"
+DEBUG   2017-04-24 15:05:56,486 [main] org.apache.http.wire  - http-outgoing-0 << "X-Powered-By: ASP.NET[\r][\n]"
+DEBUG   2017-04-24 15:05:56,486 [main] org.apache.http.wire  - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+DEBUG   2017-04-24 15:05:56,486 [main] org.apache.http.wire  - http-outgoing-0 << "CF-Cache-Status: HIT[\r][\n]"
+DEBUG   2017-04-24 15:05:56,486 [main] org.apache.http.wire  - http-outgoing-0 << "Server: cloudflare-nginx[\r][\n]"
+DEBUG   2017-04-24 15:05:56,486 [main] org.apache.http.wire  - http-outgoing-0 << "CF-RAY: 35481349757f06be-LHR[\r][\n]"
+DEBUG   2017-04-24 15:05:56,486 [main] org.apache.http.wire  - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+DEBUG   2017-04-24 15:05:56,487 [main] org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+DEBUG   2017-04-24 15:05:56,487 [main] org.apache.http.wire  - http-outgoing-0 << "2e2[\r][\n]"
+DEBUG   2017-04-24 15:05:56,487 [main] org.apache.http.wire  - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]UTao[0xdb]6[0x10][0xfd]+[0x87][0xc3][0xba][0xb5][0x0]#Kq[0xd4][0xa5][0xfa]T{^[0xe2]4[0x95][0xeb]:[0xae][0xdb][0xb4][0x18][0x8a][0xb3]t[0xb6][0xb9]P[0xa4]q[0xa4][0xec]:E[0xfe][0xfb]@[0xd9][0x1][0xba][0x8f]||[0xe4][0x1d][0xdf][0xbb][0xc7][0x9f]8[0xd7][0xc1]0[0x16]8&[0x91][0x3]L][0x8],@[0xb6][0x86][0xb0]a[0x18]1[0x85][0x8d]9[0xc0][0x98][0x8c]q{_[0xc0][0x94]$[0xc0]9*[0xbc]g[0x12],[0xf0]<[0xcd]2T8[0xa3][0xc0]5[0x16]8[0xbd]>[0xcb][0xfa]q[0xcd][0x86][0xc9]wP[0x96][0xc3][0xbb][0xd6][0xc0]3[0xb1][0xb5]A7[0xb1]^[0xd6]O[0xa1][0xd1][0x16][0x15]^[0xb3][0x95][0x88][0xc][0xea][0x1d][0xdb][0xd0][\n]"
+DEBUG   2017-04-24 15:05:56,487 [main] org.apache.http.wire  - http-outgoing-0 << "+[0x18][0x9]5[0xa4][0xe0][0x8a]l @[0x85]#-\[0x5][0x17]K[0x8e]h[0xa7]k[0xb8][0xa7][0xc0][0x1e][0x15]~[0x16][0x1d]8[0xc2]w[0x81]w[0xc][0xb7][0xc6][0xed][0xd8][0xc3]K_[0x9][0xb3][0xdd][0x1a]:[0xbc]R[0xf0].[0xb9]M`[0xe6][0xf6]F[0xdb]5[0xbc][0xb4]n[0xc7][0xe6][0x15]*[0x1c][0xc4][0xb]=[0x16]8#[0xb3][0xdd][0xc0][0x95]fk[0xd9]+(u[0xb5]!6pM[0xcd][0xd2]Y[0x5][0x3]C[0x16]f[0xba]zh[0xc8]*[0x18][0x91][0xd5]l`Fue[0xf4]j[0xc5][0xa8]pj\xVP[0xc1][0xcc][0xd9]N[0xbf]1K[0xa3][0x9d]e[0xf0]LRm`[0xe5][0x4][0x16][0xce][0xd4][0xdc]8[0x9]x[0x10]nH[0xdb][0xd8][0xd2][0xd8]I%[0xed][0xf][0xf6][0xa0]m[0x94]][0xb][0xf0]j[0xe5]$@pP[0xb3][0xf][0xe2][0xe]G;H[0x1e][0xe0][0xbd][0x93][0x1a][0xc8]w[0xc0]J[2[0xb0][0xa4][0x10][0xc][0x83][0xd0][0x9a]=[0xc4][0xea][0x1][0xc6]n[0xbd]'[0x9]>A[0x85][0xef][0xc9][0xae][ZG[0x89][0xff][0xb6]k[0xa3][0xfd][0x6][0x15][0xfe][0xe5]Z[0x1b][0xe4][0x80][0x5]~[0xba][0x1b]([0xf8]t[0x1b][0x5][0xd9][0x93][0xd4]Q[0x90][0x89]k[0xb4][0x8d][0x96]vM[0xf7][0xe1][0x83][0xaf]H|[0x2][0x3][0xeb][0xc2][0x86][0x5].r[0xd8]k[0xeb][0xe1]wx[0x93][0x82]=[0x92][0xb5][0xb3]][0xb5][0xa9][0xf3]GC6!l}[0xd1][0xeb][0xe9]&[0xf6]uf)[0xf1][0xde][0x9c][0x9d]V[0xd4][0xd0][0xa3][0xb3]I[0xe5][0x9a][0xd3]~[0xaf][0xec][0x95][0x8b]|X[0xce][0xef][0xcf][0xcb][0xf9]C[0xbf][0x1c]}[0xcc]&Y>,M>$;[0xb4]_[0x1e][0xae][0xc2][0xd7]y[0xb5]/[0x1f]o.&[0x8f][0x83][0xf3][0xc9][0xc7][0xb7]o[0x93][0xef][0x8b][0xec][0xfb][0xdd][0x97]~[0x9a]&[0xff]n[0xd7][0xc7])[0xd4]v[0xed][0xb1][0xf8][0xf6][0x13][0xef]\+U|[0xf2][0x8d][\r],[0x96][0x3][0x94]n[0xa7][0xa3][0x84][0x81][0x96][0xe4][0xa3]m[0xb]2md\&Y/K[0xf1]I[0xfd]rj[0x16]s`a[0xee][0x1a][\n]"
+DEBUG   2017-04-24 15:05:56,487 [main] org.apache.http.wire  - http-outgoing-0 << "[0xae][0x1b][0xb4]g[0xf6][0x9b][0xd7]/[0xfe]O-9P%:[0xe8][0xea][0xd7];[0xff][0xec]ei[0x8a]O[0xff][0xa8]n[0xdf]WN[0x8e]0*[0xd4]M[0xbd]<[0xb6]z,~[0x82][0x16].Nt[0x81][0xf9]e[0xae][0xf2][0xfc][0xe2][0x84][0xde][0x8c][0xb0][0xc0][0x10][0xb2][0xf3]4{[0x9d][0xc6][0xd3][0xf3][0xc3]6[0xde][0xd4][0xc4][0xd7][0xc4]`,"![0xcb]`[0xe2]v[0xcf]![0x1b][0xba][0x1f][0x1f]V+[0xdd]u[0xf7][[0xff]2Si[0x9a][0xaa][0xec]2O[0xd2]4[0x1a]$[0xae]n[0xab][0xe8][0x17][0x16][0xf8][0x99][0xc4][0xb2][0xc0]P[0x9c]O`[0xaa][0xab][0x18][0xbf].V[0xbc][0xf4]:[0xf0][0xc9][0xc6][0xa2][0xd7][0xdb][0xef][0xf7]I7[0xe0][0xc7][0x1f][0xa2]s[0xae][0xb][0xba][0xdf]:[0xeb]#q.-[0xe3][0xd3][0x9b]CI[0x9a]Q[0x4][0x0][0x0][\r][\n]"
+DEBUG   2017-04-24 15:05:56,488 [main] org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+DEBUG   2017-04-24 15:05:56,488 [main] org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+DEBUG   2017-04-24 15:05:56,490 [main] org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+DEBUG   2017-04-24 15:05:56,490 [main] org.apache.http.headers  - http-outgoing-0 << Date: Mon, 24 Apr 2017 09:35:56 GMT
+DEBUG   2017-04-24 15:05:56,490 [main] org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+DEBUG   2017-04-24 15:05:56,490 [main] org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+DEBUG   2017-04-24 15:05:56,490 [main] org.apache.http.headers  - http-outgoing-0 << Connection: keep-alive
+DEBUG   2017-04-24 15:05:56,490 [main] org.apache.http.headers  - http-outgoing-0 << Set-Cookie: __cfduid=defc4a00643268a3f6754f2f4387d55801493026556; expires=Tue, 24-Apr-18 09:35:56 GMT; path=/; domain=.omdbapi.com; HttpOnly
+DEBUG   2017-04-24 15:05:56,490 [main] org.apache.http.headers  - http-outgoing-0 << Cache-Control: public, max-age=86400
+DEBUG   2017-04-24 15:05:56,490 [main] org.apache.http.headers  - http-outgoing-0 << Expires: Tue, 25 Apr 2017 09:35:56 GMT
+DEBUG   2017-04-24 15:05:56,490 [main] org.apache.http.headers  - http-outgoing-0 << Last-Modified: Mon, 24 Apr 2017 09:13:11 GMT
+DEBUG   2017-04-24 15:05:56,490 [main] org.apache.http.headers  - http-outgoing-0 << Vary: Accept-Encoding
+DEBUG   2017-04-24 15:05:56,491 [main] org.apache.http.headers  - http-outgoing-0 << X-AspNet-Version: 4.0.30319
+DEBUG   2017-04-24 15:05:56,491 [main] org.apache.http.headers  - http-outgoing-0 << X-Powered-By: ASP.NET
+DEBUG   2017-04-24 15:05:56,491 [main] org.apache.http.headers  - http-outgoing-0 << Access-Control-Allow-Origin: *
+DEBUG   2017-04-24 15:05:56,491 [main] org.apache.http.headers  - http-outgoing-0 << CF-Cache-Status: HIT
+DEBUG   2017-04-24 15:05:56,491 [main] org.apache.http.headers  - http-outgoing-0 << Server: cloudflare-nginx
+DEBUG   2017-04-24 15:05:56,491 [main] org.apache.http.headers  - http-outgoing-0 << CF-RAY: 35481349757f06be-LHR
+DEBUG   2017-04-24 15:05:56,491 [main] org.apache.http.headers  - http-outgoing-0 << Content-Encoding: gzip
+DEBUG   2017-04-24 15:05:56,495 [main] org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+DEBUG   2017-04-24 15:05:56,508 [main] org.apache.http.client.protocol.ResponseProcessCookies  - Cookie accepted [__cfduid="defc4a00643268a3f6754f2f4387d55801493026556", version:0, domain:omdbapi.com, path:/, expiry:Tue Apr 24 15:05:56 IST 2018]
+DEBUG   2017-04-24 15:05:56,509 [main] com.roy.apiHandler.RESTClient  - 200
+DEBUG   2017-04-24 15:05:56,510 [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection manager is shutting down
+DEBUG   2017-04-24 15:05:56,510 [main] org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: Close connection
+DEBUG   2017-04-24 15:05:56,510 [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection manager shut down
+INFO    2017-04-24 15:05:56,510 [main] com.roy.apiHandler.RESTClient  - JSON Ready : {"Title":"Harry Potter and the Deathly Hallows: Part 2","Year":"2011","Rated":"PG-13","Released":"15 Jul 2011","Runtime":"130 min","Genre":"Adventure, Drama, Fantasy","Director":"David Yates","Writer":"Steve Kloves (screenplay), J.K. Rowling (novel)","Actors":"Ralph Fiennes, Michael Gambon, Alan Rickman, Daniel Radcliffe","Plot":"Harry, Ron and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.","Language":"English","Country":"USA, UK","Awards":"Nominated for 3 Oscars. Another 45 wins & 90 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTY2MTk3MDQ1N15BMl5BanBnXkFtZTcwMzI4NzA2NQ@@._V1_SX300.jpg","Ratings":[{"Source":"Internet Movie Database","Value":"8.1/10"},{"Source":"Rotten Tomatoes","Value":"96%"},{"Source":"Metacritic","Value":"87/100"}],"Metascore":"87","imdbRating":"8.1","imdbVotes":"585,554","imdbID":"tt1201607","Type":"movie","DVD":"11 Nov 2011","BoxOffice":"$381,000,185.00","Production":"Warner Bros. Pictures","Website":"http://www.HarryPotter.com/","Response":"True"}
+INFO    2017-04-24 15:07:47,563 [main] com.roy.apiHandler.RESTClient  - Received URL : http://www.omdbapi.com/?t=Harry+Potter&r=json
+INFO    2017-04-24 15:07:48,519 [main] com.roy.apiHandler.RESTClient  - JSON Ready : {"Title":"Harry Potter and the Deathly Hallows: Part 2","Year":"2011","Rated":"PG-13","Released":"15 Jul 2011","Runtime":"130 min","Genre":"Adventure, Drama, Fantasy","Director":"David Yates","Writer":"Steve Kloves (screenplay), J.K. Rowling (novel)","Actors":"Ralph Fiennes, Michael Gambon, Alan Rickman, Daniel Radcliffe","Plot":"Harry, Ron and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.","Language":"English","Country":"USA, UK","Awards":"Nominated for 3 Oscars. Another 45 wins & 90 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTY2MTk3MDQ1N15BMl5BanBnXkFtZTcwMzI4NzA2NQ@@._V1_SX300.jpg","Ratings":[{"Source":"Internet Movie Database","Value":"8.1/10"},{"Source":"Rotten Tomatoes","Value":"96%"},{"Source":"Metacritic","Value":"87/100"}],"Metascore":"87","imdbRating":"8.1","imdbVotes":"585,554","imdbID":"tt1201607","Type":"movie","DVD":"11 Nov 2011","BoxOffice":"$381,000,185.00","Production":"Warner Bros. Pictures","Website":"http://www.HarryPotter.com/","Response":"True"}
