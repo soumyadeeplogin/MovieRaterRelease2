@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -89,29 +90,70 @@ public class FileSystemHandler {
 		}
 	}
 
-	
 	public boolean deleteFolder(String name) {
-		return true;
+		File folder = new File(path.toString() + '/' + name);
+		if (folder.exists() && folder.isDirectory()) {
+			if(folder.delete()){
+				log.info("Folder deleted.");
+				return true;
+			} else {
+				log.error("Folder delete failed.");
+				return false;
+			}
+		} else {
+			log.error("Cannot delete folder. Folder doesn't exists");
+			return false;
+		}
 	}
 
 	public boolean deleteFile(String name) {
-		return true;
+		File file = new File(path.toString() + '/' + name);
+		if (file.exists() && !file.isDirectory()) {
+			if(file.delete()){
+				log.info("File deleted.");
+				return true;
+			} else {
+				log.error("File delete failed.");
+				return false;
+			}
+		} else {
+			log.error("Cannot delete File. File doesn't exists");
+			return false;
+		}
 	}
 
-	public List<String> getFileList() {
-		return null;
+	public List<File> getFileList() {
+		File[] directories = new File(path.toString()).listFiles(File::isFile);
+		List<File> file = Arrays.asList(directories);
+		System.out.println(Arrays.toString(directories));
+		return file;
 	}
 
-	public List<String> getFolderList() {
-		return null;
+	public List<File> getFolderList() {
+		File[] directories = new File(path.toString()).listFiles(File::isDirectory);
+		List<File> folder = Arrays.asList(directories);
+		System.out.println(Arrays.toString(directories));
+		return folder;
 	}
 
 	public boolean moveFile(String from, String to) {
-		return true;
+		if(renameFile(from, to)){
+			log.info("File moved");
+			return true;
+		} else {
+			log.info("Failed to move file");
+			return false;
+		}
 	}
 
 	public boolean moveFolder(String from, String to) {
-		return true;
+		if(renameFolder(from, to)){
+			log.info("Folder moved");
+			return true;
+		} else {
+			log.info("Failed to move folder");
+			return false;
+		}
 	}
 
 }

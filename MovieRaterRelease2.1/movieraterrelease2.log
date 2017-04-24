@@ -69,3 +69,21 @@ ERROR   2017-04-24 17:17:45,685 [main] com.roy.fileSystemHandler.FileSystemHandl
 INFO    2017-04-24 17:17:56,134 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
 INFO    2017-04-24 17:17:56,136 [main] com.roy.fileSystemHandler.FileSystemHandler  - File exists at ./TestFolder.txt
 INFO    2017-04-24 17:17:56,137 [main] com.roy.fileSystemHandler.FileSystemHandler  - File renamed from TestFolder.txt to Test.txt
+INFO    2017-04-24 17:29:42,755 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:29:42,757 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder created at ./TestFolder
+INFO    2017-04-24 17:29:42,758 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder deleted.
+INFO    2017-04-24 17:29:54,334 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:29:54,336 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder created at ./TestFolder
+INFO    2017-04-24 17:30:04,673 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:30:04,675 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder deleted.
+INFO    2017-04-24 17:32:03,639 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:32:03,642 [main] com.roy.fileSystemHandler.FileSystemHandler  - File created at ./TestFolder.txt
+INFO    2017-04-24 17:32:29,709 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:32:29,712 [main] com.roy.fileSystemHandler.FileSystemHandler  - File deleted.
+INFO    2017-04-24 17:53:31,947 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:57:21,243 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:57:32,082 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:58:24,214 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:58:39,223 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:58:48,556 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:58:56,905 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
