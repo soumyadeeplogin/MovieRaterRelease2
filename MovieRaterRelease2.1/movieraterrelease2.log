@@ -5,3 +5,67 @@ INFO    2017-04-24 15:15:40,771 [main] com.roy.apiHandler.APIHandler  - Year : 2
 INFO    2017-04-24 15:15:40,771 [main] com.roy.apiHandler.APIHandler  - Plot : Harry, Ron and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.
 INFO    2017-04-24 15:15:40,771 [main] com.roy.apiHandler.APIHandler  - Language : English
 INFO    2017-04-24 15:15:40,771 [main] com.roy.apiHandler.APIHandler  - Ratings : 8.1/10
+INFO    2017-04-24 16:22:51,313 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 16:22:51,315 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder created at ./Test  Folder
+INFO    2017-04-24 16:23:12,286 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+ERROR   2017-04-24 16:23:12,288 [main] com.roy.fileSystemHandler.FileSystemHandler  - Failed to create folder at ./Test  Folder
+INFO    2017-04-24 16:24:44,041 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 16:24:44,043 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder exists at ./Test  Folder
+INFO    2017-04-24 16:24:55,959 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 16:24:55,961 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder created at ./Test  Folder
+INFO    2017-04-24 16:24:57,919 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 16:24:57,921 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder exists at ./Test  Folder
+INFO    2017-04-24 16:30:25,455 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 16:30:25,457 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder created at ./TestFolder.txt
+INFO    2017-04-24 16:30:40,135 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+ERROR   2017-04-24 16:30:40,137 [main] com.roy.fileSystemHandler.FileSystemHandler  - Failed to create file at ./TestFolder.txt
+INFO    2017-04-24 16:31:04,712 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 16:31:04,714 [main] com.roy.fileSystemHandler.FileSystemHandler  - File created at ./TestFolder.txt
+INFO    2017-04-24 16:31:13,436 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 16:31:13,438 [main] com.roy.fileSystemHandler.FileSystemHandler  - File exists at ./TestFolder.txt
+INFO    2017-04-24 16:31:37,704 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 16:31:37,706 [main] com.roy.fileSystemHandler.FileSystemHandler  - File created at ./TestFoler
+INFO    2017-04-24 16:31:37,706 [main] com.roy.fileSystemHandler.FileSystemHandler  - File exists at ./TestFolder.txt
+INFO    2017-04-24 16:32:48,820 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 16:32:48,822 [main] com.roy.fileSystemHandler.FileSystemHandler  - File created at ./TestFoler
+INFO    2017-04-24 16:32:48,823 [main] com.roy.fileSystemHandler.FileSystemHandler  - File created at ./TestFolder.txt
+INFO    2017-04-24 16:33:20,336 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 16:33:20,338 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder created at ./TestFolder
+INFO    2017-04-24 16:33:20,338 [main] com.roy.fileSystemHandler.FileSystemHandler  - File exists at ./TestFolder.txt
+INFO    2017-04-24 16:33:46,338 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 16:33:46,340 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder created at ./TestFolder.txt
+ERROR   2017-04-24 16:33:46,341 [main] com.roy.fileSystemHandler.FileSystemHandler  - Failed to create file at ./TestFolder.txt
+INFO    2017-04-24 16:35:16,153 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 16:35:16,155 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder exists at ./TestFolder.txt
+INFO    2017-04-24 16:35:16,155 [main] com.roy.fileSystemHandler.FileSystemHandler  - File exists at ./TestFolder.txt
+INFO    2017-04-24 16:35:27,196 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 16:35:27,198 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder created at ./TestFolder.txt
+INFO    2017-04-24 16:35:27,198 [main] com.roy.fileSystemHandler.FileSystemHandler  - File exists at ./TestFolder.txt
+INFO    2017-04-24 16:35:51,259 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 16:35:51,261 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder created at ./TestFolder.txt
+ERROR   2017-04-24 16:35:51,262 [main] com.roy.fileSystemHandler.FileSystemHandler  - Failed to create file at ./TestFolder.txt
+INFO    2017-04-24 17:06:43,892 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:06:43,894 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder created at ./TestFolder.txt
+INFO    2017-04-24 17:06:43,894 [main] com.roy.fileSystemHandler.FileSystemHandler  - File exists at ./TestFolder.txt
+INFO    2017-04-24 17:06:43,895 [main] com.roy.fileSystemHandler.FileSystemHandler  - File renamed from TestFolder.txt to Test.txt
+INFO    2017-04-24 17:07:14,378 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:07:14,380 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder created at ./TestFolder.txt
+INFO    2017-04-24 17:07:14,381 [main] com.roy.fileSystemHandler.FileSystemHandler  - File renamed from TestFolder.txt to Test.txt
+INFO    2017-04-24 17:07:32,140 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:07:32,141 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder created at ./TestFolder
+INFO    2017-04-24 17:07:32,142 [main] com.roy.fileSystemHandler.FileSystemHandler  - File renamed from TestFolder to Test
+INFO    2017-04-24 17:07:48,462 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:07:48,464 [main] com.roy.fileSystemHandler.FileSystemHandler  - Folder created at ./TestFolder
+ERROR   2017-04-24 17:07:48,465 [main] com.roy.fileSystemHandler.FileSystemHandler  - Cannot rename file.
+INFO    2017-04-24 17:08:45,888 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:08:45,890 [main] com.roy.fileSystemHandler.FileSystemHandler  - File created at ./TestFolder.txt
+ERROR   2017-04-24 17:08:45,890 [main] com.roy.fileSystemHandler.FileSystemHandler  - Cannot rename file.
+INFO    2017-04-24 17:09:10,436 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:09:10,438 [main] com.roy.fileSystemHandler.FileSystemHandler  - File created at ./TestFolder.txt
+INFO    2017-04-24 17:09:10,439 [main] com.roy.fileSystemHandler.FileSystemHandler  - File renamed from TestFolder.txt to Test.txt
+INFO    2017-04-24 17:17:45,683 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:17:45,685 [main] com.roy.fileSystemHandler.FileSystemHandler  - File created at ./TestFolder.txt
+ERROR   2017-04-24 17:17:45,685 [main] com.roy.fileSystemHandler.FileSystemHandler  - Cannot rename folder. Folder doesn't exists
+INFO    2017-04-24 17:17:56,134 [main] com.roy.fileSystemHandler.FileSystemHandler  - Path : .
+INFO    2017-04-24 17:17:56,136 [main] com.roy.fileSystemHandler.FileSystemHandler  - File exists at ./TestFolder.txt
+INFO    2017-04-24 17:17:56,137 [main] com.roy.fileSystemHandler.FileSystemHandler  - File renamed from TestFolder.txt to Test.txt
