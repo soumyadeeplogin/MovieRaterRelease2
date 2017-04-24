@@ -1,13 +1,13 @@
 package com.roy.test;
 
-import com.roy.apiHandler.APIHandler;
-import com.roy.apiHandler.RESTClient;
-import com.roy.fileSystemHandler.FileSystemHandler;
+import java.nio.file.Paths;
+
+import com.roy.complications.AddRating;
 
 public class Tests {
 
 	public static void main(String[] args) {
-		FileSystemHandler rc = new FileSystemHandler("./");
+// //		FileSystemHandler rc = new FileSystemHandler("./");
 //		rc.createFolder("TestFolder");
 //		rc.createFile("TestFolder.txt");
 //		rc.deleteFile("TestFolder.txt");
@@ -19,8 +19,12 @@ public class Tests {
 		System.out.println(rc.getReleaseDate());
 		System.out.println(rc.getSynopsis());
 		System.out.println(rc.getTitle());*/
-		rc.getFolderList();
-		rc.getFileList();
+//		rc.getFolderList();
+//		rc.getFileList();
+		
+		AddRating addRating= new AddRating(Paths.get("./MovieRatingTester/").toString());
+		System.out.println(addRating.rateIt());
+		System.out.println("Ran");
 	}
 
 }

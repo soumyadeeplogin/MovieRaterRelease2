@@ -1,3 +1,5 @@
 com\roy\apiHandler\APIHandler.class
+com\roy\complications\AddRating.class
 com\roy\apiHandler\RESTClient.class
+com\roy\fileSystemHandler\FileSystemHandler.class
 com\roy\test\Tests.class
