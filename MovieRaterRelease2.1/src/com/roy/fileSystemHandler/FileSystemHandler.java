@@ -139,6 +139,7 @@ public class FileSystemHandler {
 	}
 
 	public boolean moveFile(String from, String to) {
+		to = to+from;
 		if(renameFile(from, to)){
 			log.info("File moved");
 			return true;
@@ -149,6 +150,7 @@ public class FileSystemHandler {
 	}
 
 	public boolean moveFolder(String from, String to) {
+		to = to+from;
 		if(renameFolder(from, to)){
 			log.info("Folder moved");
 			return true;

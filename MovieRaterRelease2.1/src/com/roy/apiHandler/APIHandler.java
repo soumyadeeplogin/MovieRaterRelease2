@@ -42,6 +42,11 @@ public class APIHandler {
 	public String getRating() {
 		return rating;
 	}
+	
+	public String getCleanRating() {
+		String rating = this.rating.substring(0, this.rating.indexOf('/'));
+		return rating;
+	}
 
 	public String getTitle() {
 		return title;

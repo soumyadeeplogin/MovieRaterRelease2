@@ -34,11 +34,11 @@ public class ProcessDirectory {
 		List<File> fileList = fileSystemHandler.getFolderList();
 		ListIterator<File> iterator = fileList.listIterator();
 		while (iterator.hasNext()) {
-			String movieName = nameCleaner(iterator.next().toString());
+			String folderNameCache = iterator.next().toString();
+			String movieName = nameCleaner(folderNameCache);
 			log.info("Movie name : " + movieName);
 			APIHandler apiHandler = new APIHandler(movieName);
-			System.out.println(apiHandler.getTitle());
-			
+			fileSystemHandler.renameFolder('\\'+folderNameCache.lastIndexOf('\\'), '\\'+apiHandler.getCleanRating() + " " + apiHandler.getTitle());			
 		}
 		return true; 
 	}
@@ -51,11 +51,11 @@ public class ProcessDirectory {
 		while (iterator.hasNext()) {
 			String fileName = iterator.next().toString();
 			fileName = fileName.substring(fileName.lastIndexOf('\\')+1);
-			String folderName = FilenameUtils.removeExtension(fileName);
+			String folderName = fileName.substring(0, fileName.lastIndexOf('.'));
 			log.info("Moving " + fileName + " to " + folderName );
 			
 			if(fileSystemHandler.createFolder(folderName)){
-				if(fileSystemHandler.moveFile(fileName, folderName))
+				if(fileSystemHandler.moveFile(fileName, '\\'+folderName+'\\'))
 				{
 					log.info("Moved");
 				} else {
