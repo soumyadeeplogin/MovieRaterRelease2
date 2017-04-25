@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.List;
 import java.util.ListIterator;
 
+import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
@@ -27,6 +28,9 @@ public class ProcessDirectory {
 		
 		FileSystemHandler fileSystemHandler = new FileSystemHandler(this.path);
 		log.info("Working on directory : " + this.path);
+		
+		moveToFolder();
+		
 		List<File> fileList = fileSystemHandler.getFolderList();
 		ListIterator<File> iterator = fileList.listIterator();
 		while (iterator.hasNext()) {
@@ -39,7 +43,29 @@ public class ProcessDirectory {
 		return true; 
 	}
 	
-	
+	private void moveToFolder(){
+		
+		FileSystemHandler fileSystemHandler = new FileSystemHandler(this.path);
+		List<File> fileList = fileSystemHandler.getFileList();
+		ListIterator<File> iterator = fileList.listIterator();
+		while (iterator.hasNext()) {
+			String fileName = iterator.next().toString();
+			fileName = fileName.substring(fileName.lastIndexOf('\\')+1);
+			String folderName = FilenameUtils.removeExtension(fileName);
+			log.info("Moving " + fileName + " to " + folderName );
+			
+			if(fileSystemHandler.createFolder(folderName)){
+				if(fileSystemHandler.moveFile(fileName, folderName))
+				{
+					log.info("Moved");
+				} else {
+					log.error("Move failed");
+				}
+			} else {
+				log.error("Folder creation failed");
+			}
+		}
+	}
 	
 
 	private String nameCleaner(String name) {

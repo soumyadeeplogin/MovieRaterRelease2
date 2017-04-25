@@ -125,14 +125,16 @@ public class FileSystemHandler {
 	public List<File> getFileList() {
 		File[] directories = new File(path.toString()).listFiles(File::isFile);
 		List<File> file = Arrays.asList(directories);
-		System.out.println(Arrays.toString(directories));
+		log.debug("getFileList : " + Arrays.toString(directories));
+//		System.out.println(Arrays.toString(directories));
 		return file;
 	}
 
 	public List<File> getFolderList() {
 		File[] directories = new File(path.toString()).listFiles(File::isDirectory);
 		List<File> folder = Arrays.asList(directories);
-		System.out.println(Arrays.toString(directories));
+		log.debug("getFolderList : " + Arrays.toString(directories));
+//		System.out.println(Arrays.toString(directories));
 		return folder;
 	}
 
