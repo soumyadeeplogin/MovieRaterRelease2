@@ -13,12 +13,12 @@ import com.roy.fileSystemHandler.FileSystemHandler;
 
 
 
-public class AddRating {
+public class ProcessDirectory {
 
 	String path;
 	Logger log = Logger.getLogger(this.getClass());
 
-	public AddRating(String path) {
+	public ProcessDirectory(String path) {
 		this.path = path;
 		PropertyConfigurator.configure("log4j.properties");
 	}
@@ -39,13 +39,17 @@ public class AddRating {
 		return true; 
 	}
 	
+	
+	
 
 	private String nameCleaner(String name) {
 		String cleanedName = name.toLowerCase().replace("hd", "");
-		cleanedName = cleanedName.replace("hd", "");
+		cleanedName = cleanedName.replace("hdrip", "");
 		cleanedName = cleanedName.replace("brrip", "");
 		cleanedName = cleanedName.replace("ts", "");
 		cleanedName = cleanedName.substring(cleanedName.lastIndexOf('\\')+1, cleanedName.length());
 		return cleanedName;
 	}
+	
+	
 }

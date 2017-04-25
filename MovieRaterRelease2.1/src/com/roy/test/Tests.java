@@ -2,7 +2,7 @@ package com.roy.test;
 
 import java.nio.file.Paths;
 
-import com.roy.complications.AddRating;
+import com.roy.complications.ProcessDirectory;
 
 public class Tests {
 
@@ -22,7 +22,7 @@ public class Tests {
 //		rc.getFolderList();
 //		rc.getFileList();
 		
-		AddRating addRating= new AddRating(Paths.get("./MovieRatingTester/").toString());
+		ProcessDirectory addRating= new ProcessDirectory(Paths.get("./MovieRatingTester/").toString());
 		System.out.println(addRating.rateIt());
 		System.out.println("Ran");
 	}
